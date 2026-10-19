@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import {Component, input} from '@angular/core';
+import {CatsList} from '../cats-list/cats-list';
 
 @Component({
   imports: [],
@@ -6,4 +7,6 @@ import { Component } from '@angular/core';
   styleUrl: './cats-list-items.css',
   templateUrl: './cats-list-items.html',
 })
-export class CatsListItems {}
+export class CatsListItems {
+  cat = input.required<CatsList>()
+}
