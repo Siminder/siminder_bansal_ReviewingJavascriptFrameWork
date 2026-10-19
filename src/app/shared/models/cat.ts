@@ -1,8 +1,8 @@
 export interface Cat {
+  id:number
   name:string;
   coatLength:number| string;
   Colors:string;
-  EarType:string;
   location:string;
   traits:string;
   hasShots?: boolean;
