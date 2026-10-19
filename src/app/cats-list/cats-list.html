@@ -1,1 +1,11 @@
-<p>cats-list works!</p>
+<div>
+  <h2>cat adoptions</h2>
+
+  @for (cat of catList; track cat.id) {
+    <app-cats-list-items [cat]="cat"/>
+
+
+  }
+
+
+</div>

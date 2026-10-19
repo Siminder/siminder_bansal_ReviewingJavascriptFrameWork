@@ -1,1 +1,18 @@
-<p>cats-list-items works!</p>
+@switch (cat().Colors) {
+  @case ('blue') {
+    <span>Blue Cat</span>
+  }
+  @case ('orange') {
+    <span>Orange Cat</span>
+  }
+  @default {
+    <span>Other Color</span>
+  }
+}
+
+
+@if (cat().hasShots) {
+  <span>Shots completed</span>
+} @else {
+  <span>Shots not confirmed</span>
+}

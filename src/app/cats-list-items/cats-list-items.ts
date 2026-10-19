@@ -1,12 +1,12 @@
-import {Component, input} from '@angular/core';
-import {CatsList} from '../cats-list/cats-list';
+import { Component, input } from '@angular/core';
+import { Cat } from '../shared/models/cat';
 
 @Component({
-  imports: [],
   selector: 'app-cats-list-items',
+  imports: [],
   styleUrl: './cats-list-items.css',
   templateUrl: './cats-list-items.html',
 })
 export class CatsListItems {
-  cat = input.required<CatsList>()
+  cat = input.required<Cat>();
 }
