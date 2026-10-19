@@ -1,10 +1,17 @@
 <div>
   <h2>Cat adoptions</h2>
 
-  @for (cat of catList; track cat.id) {
+  @for (cat of catsService.catList(); track cat.id) {
     <app-cats-list-items
       [cat]="cat"
       (catEvent)="handleCatEvent($event)"
+      (remove)="removeCat($event)"
     />
+  }
+
+  <h2>Cats with completed shots</h2>
+
+  @for (cat of catsService.catList(); track cat.id) {
+    <p>{{ cat.name }} — {{ cat.location }}</p>
   }
 </div>

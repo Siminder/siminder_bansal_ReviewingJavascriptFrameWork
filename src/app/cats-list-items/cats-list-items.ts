@@ -26,4 +26,10 @@ export class CatsListItems {
       action: 'favourited'
     });
   }
+
+  remove = output<number>();
+
+  removeCat() {
+    this.remove.emit(this.cat().id);
+  }
 }
