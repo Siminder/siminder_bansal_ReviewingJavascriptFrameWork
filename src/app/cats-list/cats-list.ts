@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {Cat} from '../shared/models/cat';
+import { CatEvent } from '../shared/models/cat';
 import {CatsListItems} from '../cats-list-items/cats-list-items';
 
 @Component({
@@ -16,4 +17,9 @@ export class CatsList {
     {id:2 ,name:"gibbit", coatLength:"50", Colors:"freenb", location:"las vegas", traits:"gambler"},
     {id:3, name:"George", coatLength:30, Colors:"orange", hasShots: true, location:"everywhere", traits:"not fun"}
   ]
+
+  handleCatEvent(event: CatEvent) {
+    console.log(event);
+  }
+
 }

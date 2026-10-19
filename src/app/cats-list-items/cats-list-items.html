@@ -8,11 +8,19 @@
   @default {
     <span>Other Color</span>
   }
+
+
 }
+
 
 
 @if (cat().hasShots) {
   <span>Shots completed</span>
+
 } @else {
   <span>Shots not confirmed</span>
 }
+<div>
+  <button (click)="favouriteCat()">Favourite</button>
+</div>
+

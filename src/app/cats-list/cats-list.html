@@ -1,11 +1,10 @@
 <div>
-  <h2>cat adoptions</h2>
+  <h2>Cat adoptions</h2>
 
   @for (cat of catList; track cat.id) {
-    <app-cats-list-items [cat]="cat"/>
-
-
+    <app-cats-list-items
+      [cat]="cat"
+      (catEvent)="handleCatEvent($event)"
+    />
   }
-
-
 </div>

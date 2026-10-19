@@ -8,3 +8,7 @@ export interface Cat {
   hasShots?: boolean;
 }
 
+export interface CatEvent {
+  id: number;
+  action: 'opened' | 'favourited';
+}

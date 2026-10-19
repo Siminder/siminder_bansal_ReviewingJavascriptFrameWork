@@ -1,17 +1,3 @@
-
 <div>
-  @for (Cat of catList; track Cat.id){
-    <div>
-      <p>{{ Cat.name }}</p>
-      <p>colors: {{ Cat.Colors}}</p>
-      <p>coat length: {{ Cat.coatLength }} inches</p>
-      <p> location: {{ Cat.location }}</p>
-      <p> traits: {{ Cat.traits }}</p>
-      <p> shots: {{ Cat.hasShots ? 'yes' : 'no' }}</p>
-    </div>
-  } @empty {
-     <p> no cats found</p>
-  }
-
-
+  <app-cats-list></app-cats-list>
 </div>
